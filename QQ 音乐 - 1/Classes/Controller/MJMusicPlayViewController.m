@@ -107,6 +107,29 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     [self startPlayMusic];
 //    listView 发送的通知,设置控制器为 listView 的观察者
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(clickSongListCell:) name:@"MJNotificationListCellSelected" object:nil];
+    
+//    监听耳机的状态，拔出耳机后，通知观察者，暂停播放
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(routeChange:) name:AVAudioSessionRouteChangeNotification object:nil];
+}
+// 监听耳机的插拔
+- (void)routeChange:(NSNotification *)notification
+{
+    NSDictionary * dict = notification.userInfo;
+    NSInteger changeReason = [dict[AVAudioSessionRouteChangeReasonKey] integerValue];
+    if (changeReason == AVAudioSessionRouteChangeReasonOldDeviceUnavailable)
+    {
+//        拿到 routeChange 时，原来的设备
+        AVAudioSessionRouteDescription * routeDescription = dict[AVAudioSessionRouteChangePreviousRouteKey];
+        AVAudioSessionPortDescription * portDescription = [routeDescription.outputs firstObject];
+//        如果原来的设备是耳机，就停止播放
+        if ([portDescription.portType isEqualToString:@"Headphones"])
+        {
+            [self.currentPlayer pause];
+            self.playOrPauseButton.selected = self.currentPlayer.isPlaying;
+            [self playOrPauseClick:nil];
+        }
+
+    }
 }
 #pragma mark - listView cell 点击的观察者方法
 - (void)clickSongListCell:(NSNotification *)notification
@@ -473,6 +496,12 @@ static NSString * rotationAnimKeyPath = @"transform.rotation.z";
         }
     }
 }
-
+- (void)dealloc
+{
+//    移除耳机routeChange 的观察者
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:AVAudioSessionRouteChangeNotification object:nil];
+//    移除 listViewCell 的点击事件的观察者
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"MJNotificationListCellSelected" object:nil];
+}
 
 @end
