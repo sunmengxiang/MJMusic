@@ -71,11 +71,12 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
 @end
 
 @implementation MJMusicPlayViewController
-
+// 禁止自动旋转
 - (BOOL)shouldAutorotate
 {
     return NO;
 }
+#pragma mark - 懒加载
 - (UIView *)songList
 {
     if (_songList == nil)
@@ -92,6 +93,7 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     }
     return _sequenceArray;
 }
+#pragma mark - viewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -103,9 +105,10 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     
     //    布局页面
     [self startPlayMusic];
-    
+//    listView 发送的通知,设置控制器为 listView 的观察者
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(clickSongListCell:) name:@"MJNotificationListCellSelected" object:nil];
 }
+#pragma mark - listView cell 点击的观察者方法
 - (void)clickSongListCell:(NSNotification *)notification
 {
     NSIndexPath * indexPath = notification.object;
@@ -118,6 +121,7 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     
     [self startPlayMusic];
 }
+#pragma mark - 设置 lrcView
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -126,7 +130,7 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     [self setUpLrcScrollView];
 }
 
-#pragma mark - viewDidLoad 的设置
+#pragma mark - view加载完成时会自动调用的方法
 //    设置 lrcScrollView
 - (void)setUpLrcScrollView
 {
@@ -444,5 +448,31 @@ static NSString * rotationAnimKeyPath = @"transform.rotation.z";
             [self.lrcView setContentOffset:CGPointZero animated:YES];
         }
 }
+
+#pragma mark - 锁屏后接收远程事件
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event
+{
+    if (event.type == UIEventTypeRemoteControl)
+    {
+        switch (event.subtype)
+        {
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                [self playOrPauseClick:nil];
+                NSLog(@"playOrPauseClick--%zd",self.playOrPauseButton.selected);
+                break;
+            case UIEventSubtypeRemoteControlNextTrack:
+                [self nextClick:nil];
+                NSLog(@"nextClick");
+                break;
+            case UIEventSubtypeRemoteControlPreviousTrack:
+                [self previousClick:nil];
+                NSLog(@"previousClick");
+                break;
+            default:
+                break;
+        }
+    }
+}
+
 
 @end

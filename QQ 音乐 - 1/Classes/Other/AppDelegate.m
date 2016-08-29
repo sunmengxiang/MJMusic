@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MJMusicPlayViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+/**    设置音乐后台播放 **/
+//    拿到音频会话
+    AVAudioSession * session = [AVAudioSession sharedInstance];
+//    设置后台播放类型
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+//    激活音频会话
+    [session setActive:YES error:nil];
+    
     return YES;
 }
 

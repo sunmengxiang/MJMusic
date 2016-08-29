@@ -238,9 +238,9 @@
 		FE366D061D744DB400D6F4D1 /* QQ 音乐 - 1 */ = {
 			isa = PBXGroup;
 			children = (
+				FE366D0A1D744DB400D6F4D1 /* Classes */,
 				FE366D071D744DB400D6F4D1 /* Assets.xcassets */,
 				FE366D081D744DB400D6F4D1 /* Main.storyboard */,
-				FE366D0A1D744DB400D6F4D1 /* Classes */,
 				FE366D591D744DB400D6F4D1 /* Info.plist */,
 				FE366D5A1D744DB400D6F4D1 /* main.m */,
 				FE366D5B1D744DB400D6F4D1 /* QQ______1.xcdatamodeld */,
@@ -252,12 +252,12 @@
 		FE366D0A1D744DB400D6F4D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FE366D0B1D744DB400D6F4D1 /* Controller */,
 				FE366D0E1D744DB400D6F4D1 /* Lib */,
+				FE366D0B1D744DB400D6F4D1 /* Controller */,
 				FE366D3B1D744DB400D6F4D1 /* Model */,
-				FE366D401D744DB400D6F4D1 /* Other */,
-				FE366D461D744DB400D6F4D1 /* Tools */,
 				FE366D4D1D744DB400D6F4D1 /* View */,
+				FE366D461D744DB400D6F4D1 /* Tools */,
+				FE366D401D744DB400D6F4D1 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
