@@ -20,9 +20,9 @@
 
 ### 完成的功能如下：
 
-![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/listPlay.png)
-![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/lrcLineLabel.png)
-`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`
-![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/randomPlay.png)
-![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/songAnimation.png)
-![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/songList.png)
+![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/listPlay.png)	
+![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/lrcLineLabel.png)	
+`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`	
+![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/randomPlay.png)		
+![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/songAnimation.png) 	
+![image](https://github.com/sunmengxiang/baisibudejie-newcomerDemo/blob/master/photo/songList.png)	
