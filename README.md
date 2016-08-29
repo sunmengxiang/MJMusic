@@ -22,7 +22,7 @@
 
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/listPlay.png)	
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/lrcLineLabel.png)	
-`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`	
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/randomPlay.png)		
-![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songAnimation.png) 	
+![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songAnimation.png) 
+`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songList.png)	
