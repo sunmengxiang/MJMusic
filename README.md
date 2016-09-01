@@ -37,6 +37,7 @@
 - 1.音乐播放实现*(MJAudioTools*)：
 	 - 1.1 实现音乐播放有两个方法:
 		 - 1.1.1 音效的播放
+
 				+ (void)playSoundWithSoundName:(NSString *)soundName
 				{
 				//    定义 soundID
@@ -58,7 +59,7 @@
 			        //    ps:   AudioServicesPlayAlertSound(soundID) 可以播放时带*振动*效果
 				}
                 音效的播放一般用于短时间的声音播放，如特效声音这些1~2 s时长的音频
-      		使用到*<AVFoundation/AVFoundation.h>*框架
+      		使用到 *AVFoundation/AVFoundation.h* 框架	
 		  - 1.1.2 音乐的播放
 		  
 					#pragma mark - 音乐的播放
@@ -85,7 +86,7 @@
                         return player;
                         }
 		音乐的播放一般用* AVAudioPlayer* 类
-      		使用到*<AVFoundation/AVFoundation.h>*框架	
+      		使用到 *AVFoundation/AVFoundation.h* 框架	
 		使用到*- (void)prepareToPlay;*是为了缓冲，提高播放流畅性	
 		暂停:*- (void)pause;* 停止:*- (void)stop* 停止后，建议将 _player = nil;
 - 2.音乐切换(MJMusicTools)
@@ -215,7 +216,8 @@
 			可以通过 setCategory 方法其他的会话方法，具体可以command+鼠标左键点进去查看
 - 8.锁屏后，锁屏界面控制音乐的播放，切歌
 	- 8.1 在 info.plist 中增加*Required background modes* 项，这是一个 NSArray，进去后设置*App plays audio or streams audio/video using AirPlay*
-	- 8.2 在控制器中实现:*- (void)remoteControlReceivedWithEvent:(UIEvent *)event;*方法
+	- 8.2 在控制器中实现:*- (void)remoteControlReceivedWithEvent:(UIEvent *)event;*方法	
+
 				- (void)remoteControlReceivedWithEvent:(UIEvent *)event
 				{
 				// 判断 event 是否 remoteControl 事件
