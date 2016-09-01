@@ -13,14 +13,13 @@
 - 9.耳机拔掉之后，暂停音乐播放
 
 ##待完善部分
-~~- 1.进入后台后，继续播放音乐~~
-~~- 2.锁屏后，锁屏界面控制音乐的播放，切歌~~
+~~- 1.进入后台后，继续播放音乐~~	
+~~- 2.锁屏后，锁屏界面控制音乐的播放，切歌~~	
 ~~- 3.耳机拔掉之后，暂停音乐播放~~
 
 
 ### 使用到的第三方框架有：
 	- pod 'Masonry'
-	- pod 'MJExtension'
 
 ### 完成的功能如下：
 
@@ -28,7 +27,7 @@
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/lrcLineLabel.png)
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/randomPlay.png)
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songAnimation.png)
-`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`
+*`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`*
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songList.png)
 
 #### 解析:
@@ -38,9 +37,6 @@
 - 1.音乐播放实现`(MJAudioTools`)：
 	 - 1.1 实现音乐播放有两个方法:
 		 - 1.1.1 音效的播放
-				//   存储音效的字典
-				static NSMutableDictionary * _soundID;
-				#pragma mark - 音效的播放
 				+ (void)playSoundWithSoundName:(NSString *)soundName
 				{
 				//    定义 soundID
@@ -88,8 +84,8 @@
                         return player;
                         }
 		音乐的播放一般用` AVAudioPlayer` 类
-      		使用到`<AVFoundation/AVFoundation.h>`框架
-		使用到`- (void)prepareToPlay;`是为了缓冲，提高播放流畅性
+      		使用到`<AVFoundation/AVFoundation.h>`框架	
+		使用到`- (void)prepareToPlay;`是为了缓冲，提高播放流畅性	
 		暂停:`- (void)pause;` 停止:`- (void)stop` 停止后，建议将 _player = nil;
 - 2.音乐切换(MJMusicTools)
    	- 2.1 随机播放
@@ -113,13 +109,15 @@
 				    return randomMusic;
 				}
 
-	 - 2.2 单曲循环
-		伪代码:
-			Event:nextClick --> Action:- (IBAction)nextClick 执行
-			{
-				if（playType == OneCirclePlay）
-					[currentPlayer play]
-			}
+	 - 2.2 单曲循环		
+			伪代码:	
+		
+					Event:nextClick --> Action:- (IBAction)nextClick 执行
+					{
+						if（playType == OneCirclePlay）
+						
+						[currentPlayer play]
+					}
    	- 2.3 列表播放(略)
 - 3.播放列表查看及播放选中歌曲
 	- 3.1 `storyBoard 增加按钮` --> 实现 action 方法 --> 方法中调用列表视图 `ListView` 对象方法`-(void)show` --> 用户选中列表中歌曲 -->列表视图发送通知 --> 控制器这个观察者接到通知 --> 播放音乐
@@ -139,9 +137,10 @@
 				    self.iconImageView.layer.borderColor = [MJColor(36, 36, 36) CGColor];
 
 				}
-		5.1.1 Quartz-2D补充
+		5.1.1 Quartz-2D补充	
+		
 				@implementation UIImage (MJCircleImage)
-
+				
 				- (UIImage *)imageWithCircleImage
 				{
 				// 开启上下文
@@ -164,9 +163,10 @@
 
 				    return image;
 				}
-		将经过 Quartz-2D处理过的图片交给 self.iconImageView.image 即可，这里考虑开发实用性及简便性，就采用了 mask 的方法
+		将经过 Quartz-2D处理过的图片交给 `self.iconImageView.image` 即可，这里考虑开发实用性及简便性，就采用了 `mask` 的方法
 - 6.背景实现专辑封面蒙版
 	- 6.1 mask 做法
+	
 				//  创建一个跟背景图片一样大的 layer
 				    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
 				    CGRect maskRect = self.view.bounds;
@@ -209,7 +209,9 @@
 
 				    return YES;
 				}
-			在 AppDelegate 中application：didFinishLaunchingWithOptions：；方法中设置音频会话的 setCategory 方法，并激活会话，即可实现，这一这个会话`AVAudioSession`是单例,是<AVFoundation/AVFoundation.h>框架中的，也可以通过 setCategory 方法其他的会话方法，具体可以command+鼠标左键点进去查看
+			在 AppDelegate 中application：didFinishLaunchingWithOptions：；方法中设置音频会话的 setCategory 方法，并激活会话，即可实现	
+			`AVAudioSession`是单例,是<AVFoundation/AVFoundation.h>框架中的	
+			可以通过 setCategory 方法其他的会话方法，具体可以command+鼠标左键点进去查看
 - 8.锁屏后，锁屏界面控制音乐的播放，切歌
 	- 8.1 在 info.plist 中增加`Required background modes` 项，这是一个 NSArray，进去后设置`App plays audio or streams audio/video using AirPlay`
 	- 8.2 在控制器中实现:`- (void)remoteControlReceivedWithEvent:(UIEvent *)event;`方法
@@ -238,6 +240,7 @@
 				    }
 				}
 - 9.耳机拔掉之后，暂停音乐播放
+- 
 				//    监听耳机的状态，拔出耳机后，通知观察者，暂停播放
 				    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(routeChange:) name:AVAudioSessionRouteChangeNotification object:nil];
 				//    监听耳机的插拔
