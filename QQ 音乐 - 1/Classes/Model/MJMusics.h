@@ -22,4 +22,6 @@
 @property (strong ,nonatomic) NSString * singerIcon;
 /** name */
 @property (strong ,nonatomic) NSString * icon;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end

@@ -8,8 +8,6 @@
 
 #import "MJAudioTools.h"
 @interface MJAudioTools ()
-
-
 @end
 
 @implementation MJAudioTools

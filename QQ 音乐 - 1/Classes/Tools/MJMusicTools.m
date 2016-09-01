@@ -8,7 +8,6 @@
 
 #import "MJMusicTools.h"
 #import "MJMusics.h"
-#import "MJExtension.h"
 #import <AVFoundation/AVFoundation.h>
 @interface MJMusicTools ()
 
@@ -23,7 +22,19 @@ static NSInteger _currentIndex;
 {
     if (_muscisArray == nil)
     {
-        _muscisArray = [MJMusics objectArrayWithFilename:@"Musics.plist"];
+        NSString *filePath = [[NSBundle mainBundle]pathForResource:@"Musics.plist" ofType:nil];
+        
+        NSArray * array = [NSArray arrayWithContentsOfFile:filePath];
+        
+        NSMutableArray * arrayM = [NSMutableArray array];
+        
+        for (NSDictionary * dic in array)
+        {
+            MJMusics * music = [[MJMusics alloc]initWithDictionary:dic];
+            
+            [arrayM addObject:music];
+        }
+        _muscisArray = arrayM;
     }
     if (_currentMusics == nil)
     {

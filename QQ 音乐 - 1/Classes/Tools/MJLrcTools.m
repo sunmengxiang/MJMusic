@@ -9,7 +9,7 @@
 #import "MJLrcTools.h"
 #import "MJMusics.h"
 #import "MJLrcList.h"
-#import "MJExtension.h"
+
 @implementation MJLrcTools
 
 /*

@@ -19,7 +19,7 @@
     if (self = [super init])
     {
         NSArray * stringArr = [lrcLine componentsSeparatedByString:@"]"];
-        
+      
         self.lrcText = stringArr[1];
         NSString * timeString = stringArr[0];
 //        [00:55.29]从此我开始孤单思念
