@@ -27,14 +27,14 @@
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/lrcLineLabel.png)
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/randomPlay.png)
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songAnimation.png)
-*`ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常`*
+**ps因为模拟器问题，歌词背景颜色无法调整，真机测试无异常**	
 ![image](https://github.com/sunmengxiang/MJMusic/blob/master/functionImage/songList.png)
 
 #### 解析:
 - 0.分层设计模式:
-	- 0.0 表示层:`由MJMusicPlayViewController` 控制器；若干自定义 `UIView` 组成
-  	- 0.1 业务逻辑层:有 `MJAudioTools` `MJLrcTools` `MJMusicTools` 组成，分别给表示层提供*控制播放* *显示歌词* *管理播放顺序* 的功能
-- 1.音乐播放实现`(MJAudioTools`)：
+	- 0.0 表示层:*由MJMusicPlayViewController* 控制器；若干自定义 *UIView* 组成
+  	- 0.1 业务逻辑层:有 *MJAudioTools* *MJLrcTools* *MJMusicTools* 组成，分别给表示层提供*控制播放* *显示歌词* *管理播放顺序* 的功能
+- 1.音乐播放实现*(MJAudioTools*)：
 	 - 1.1 实现音乐播放有两个方法:
 		 - 1.1.1 音效的播放
 				+ (void)playSoundWithSoundName:(NSString *)soundName
@@ -55,12 +55,13 @@
 				    }
 				//    播放音效
 				    AudioServicesPlaySystemSound(soundID);
-			        //    ps:   AudioServicesPlayAlertSound(soundID) 可以播放时带`振动`效果
+			        //    ps:   AudioServicesPlayAlertSound(soundID) 可以播放时带*振动*效果
 				}
                 音效的播放一般用于短时间的声音播放，如特效声音这些1~2 s时长的音频
-      		使用到`<AVFoundation/AVFoundation.h>`框架
+      		使用到*<AVFoundation/AVFoundation.h>*框架
 		  - 1.1.2 音乐的播放
-#pragma mark - 音乐的播放
+		  
+					#pragma mark - 音乐的播放
                     + (AVAudioPlayer *)playSoundWithMusicName:(NSString *)musicName
                     {
 
@@ -83,10 +84,10 @@
 
                         return player;
                         }
-		音乐的播放一般用` AVAudioPlayer` 类
-      		使用到`<AVFoundation/AVFoundation.h>`框架	
-		使用到`- (void)prepareToPlay;`是为了缓冲，提高播放流畅性	
-		暂停:`- (void)pause;` 停止:`- (void)stop` 停止后，建议将 _player = nil;
+		音乐的播放一般用* AVAudioPlayer* 类
+      		使用到*<AVFoundation/AVFoundation.h>*框架	
+		使用到*- (void)prepareToPlay;*是为了缓冲，提高播放流畅性	
+		暂停:*- (void)pause;* 停止:*- (void)stop* 停止后，建议将 _player = nil;
 - 2.音乐切换(MJMusicTools)
    	- 2.1 随机播放
 				+ (MJMusics *)randomMusic
@@ -120,12 +121,12 @@
 					}
    	- 2.3 列表播放(略)
 - 3.播放列表查看及播放选中歌曲
-	- 3.1 `storyBoard 增加按钮` --> 实现 action 方法 --> 方法中调用列表视图 `ListView` 对象方法`-(void)show` --> 用户选中列表中歌曲 -->列表视图发送通知 --> 控制器这个观察者接到通知 --> 播放音乐
-	- 3.2 这里用到 `NSNotification` 并不太妥，因为用户点击事件只需要一个结果，就是播放音乐，而通知是一对多的关系，所以采用代理 `delegate` 方式会更好 `update`
-- 4.播放歌词实时同步动画(`MJLrcTools`)
-	- 4.1  开始播放音乐 playing --> 开始 CADisplayLink 定时器 --> 按照屏幕刷新的频率调用 `- (void)updateLrcInfo;`方法 --> 将playing Music 已经播放的事件 `currentTime` 传给显示歌词的 `lrcView` --> 重写 `currentTime` setter 方法 --> 遍历装有每行歌词的数组 --> 找到跟 `currentTime` 匹配的歌词 --> 告诉显示歌词的自定义 label 根据 `progress` 进行重绘 --> 重绘下一句歌词时，将上一句复原
+	- 3.1 *storyBoard* 增加按钮 --> 实现 action 方法 --> 方法中调用列表视图 *ListView* 对象方法*-(void)show* --> 用户选中列表中歌曲 -->列表视图发送通知 --> 控制器这个观察者接到通知 --> 播放音乐
+	- 3.2 这里用到 *NSNotification* 并不太妥，因为用户点击事件只需要一个结果，就是播放音乐，而通知是一对多的关系，所以采用代理 *delegate* 方式会更好 *update*
+- 4.播放歌词实时同步动画(*MJLrcTools*)
+	- 4.1  开始播放音乐 playing --> 开始 CADisplayLink 定时器 --> 按照屏幕刷新的频率调用 *- (void)updateLrcInfo;*方法 --> 将playing Music 已经播放的事件 *currentTime* 传给显示歌词的 *lrcView* --> 重写 *currentTime* setter 方法 --> 遍历装有每行歌词的数组 --> 找到跟 *currentTime* 匹配的歌词 --> 告诉显示歌词的自定义 label 根据 *progress* 进行重绘 --> 重绘下一句歌词时，将上一句复原
 - 5.专辑封面圆形剪切及动画旋转、暂停、停止
-	- 5.1  圆形剪切:*因为只有一张图片的，就不考虑离屏渲染的问题了，采用`mask`的 `cornerRadius` 进行设置*
+	- 5.1  圆形剪切:*因为只有一张图片的，就不考虑离屏渲染的问题了，采用*mask*的 *cornerRadius* 进行设置*
 				- (void)viewDidLayoutSubviews
 				{
 				    self.iconImageView.layer.cornerRadius = self.iconImageView.bounds.size.height * 0.5;
@@ -137,7 +138,7 @@
 				    self.iconImageView.layer.borderColor = [MJColor(36, 36, 36) CGColor];
 
 				}
-		5.1.1 Quartz-2D补充	
+		- 5.1.1 Quartz-2D补充	
 		
 				@implementation UIImage (MJCircleImage)
 				
@@ -163,7 +164,7 @@
 
 				    return image;
 				}
-		将经过 Quartz-2D处理过的图片交给 `self.iconImageView.image` 即可，这里考虑开发实用性及简便性，就采用了 `mask` 的方法
+		将经过 Quartz-2D处理过的图片交给 *self.iconImageView.image* 即可，这里考虑开发实用性及简便性，就采用了 *mask* 的方法
 - 6.背景实现专辑封面蒙版
 	- 6.1 mask 做法
 	
@@ -210,11 +211,11 @@
 				    return YES;
 				}
 			在 AppDelegate 中application：didFinishLaunchingWithOptions：；方法中设置音频会话的 setCategory 方法，并激活会话，即可实现	
-			`AVAudioSession`是单例,是<AVFoundation/AVFoundation.h>框架中的	
+			*AVAudioSession*是单例,是<AVFoundation/AVFoundation.h>框架中的	
 			可以通过 setCategory 方法其他的会话方法，具体可以command+鼠标左键点进去查看
 - 8.锁屏后，锁屏界面控制音乐的播放，切歌
-	- 8.1 在 info.plist 中增加`Required background modes` 项，这是一个 NSArray，进去后设置`App plays audio or streams audio/video using AirPlay`
-	- 8.2 在控制器中实现:`- (void)remoteControlReceivedWithEvent:(UIEvent *)event;`方法
+	- 8.1 在 info.plist 中增加*Required background modes* 项，这是一个 NSArray，进去后设置*App plays audio or streams audio/video using AirPlay*
+	- 8.2 在控制器中实现:*- (void)remoteControlReceivedWithEvent:(UIEvent *)event;*方法
 				- (void)remoteControlReceivedWithEvent:(UIEvent *)event
 				{
 				// 判断 event 是否 remoteControl 事件
@@ -240,7 +241,7 @@
 				    }
 				}
 - 9.耳机拔掉之后，暂停音乐播放
-- 
+
 				//    监听耳机的状态，拔出耳机后，通知观察者，暂停播放
 				    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(routeChange:) name:AVAudioSessionRouteChangeNotification object:nil];
 				//    监听耳机的插拔
