@@ -66,17 +66,31 @@
 		FE366DCA1D744DB400D6F4D1 /* 309769.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE366D7B1D744DB400D6F4D1 /* 309769.lrc */; };
 		FE366DCB1D744DB400D6F4D1 /* 339744.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE366D7C1D744DB400D6F4D1 /* 339744.lrc */; };
 		FE366DCC1D744DB400D6F4D1 /* 月半小夜曲.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE366D7D1D744DB400D6F4D1 /* 月半小夜曲.lrc */; };
-		FE366DCD1D744DB400D6F4D1 /* 10405520.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D7F1D744DB400D6F4D1 /* 10405520.mp3 */; };
-		FE366DCE1D744DB400D6F4D1 /* 10736444.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D801D744DB400D6F4D1 /* 10736444.mp3 */; };
-		FE366DCF1D744DB400D6F4D1 /* 1201111234.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D811D744DB400D6F4D1 /* 1201111234.mp3 */; };
-		FE366DD01D744DB400D6F4D1 /* 120125029.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D821D744DB400D6F4D1 /* 120125029.mp3 */; };
-		FE366DD11D744DB400D6F4D1 /* 12309111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D831D744DB400D6F4D1 /* 12309111.mp3 */; };
-		FE366DD21D744DB400D6F4D1 /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D841D744DB400D6F4D1 /* 14945107.mp3 */; };
-		FE366DD31D744DB400D6F4D1 /* 235319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D851D744DB400D6F4D1 /* 235319.mp3 */; };
-		FE366DD41D744DB400D6F4D1 /* 255319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D861D744DB400D6F4D1 /* 255319.mp3 */; };
-		FE366DD51D744DB400D6F4D1 /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D871D744DB400D6F4D1 /* 309769.mp3 */; };
-		FE366DD61D744DB400D6F4D1 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE366D881D744DB400D6F4D1 /* 339744.mp3 */; };
 		FE366DD71D744DB400D6F4D1 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE366D891D744DB400D6F4D1 /* Musics.plist */; };
+		FE4268A61D786E7400028080 /* 周杰伦 - 一路向北.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE42689B1D786E7400028080 /* 周杰伦 - 一路向北.mp3 */; };
+		FE4268A71D786E7400028080 /* 周杰伦 - 上海一九四三.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE42689C1D786E7400028080 /* 周杰伦 - 上海一九四三.mp3 */; };
+		FE4268A81D786E7400028080 /* 周杰伦 - 世界末日.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE42689D1D786E7400028080 /* 周杰伦 - 世界末日.mp3 */; };
+		FE4268A91D786E7400028080 /* 周杰伦 - 分裂(离开).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE42689E1D786E7400028080 /* 周杰伦 - 分裂(离开).mp3 */; };
+		FE4268AA1D786E7400028080 /* 周杰伦 - 告白气球.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE42689F1D786E7400028080 /* 周杰伦 - 告白气球.mp3 */; };
+		FE4268AB1D786E7400028080 /* 周杰伦 - 回到过去.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A01D786E7400028080 /* 周杰伦 - 回到过去.mp3 */; };
+		FE4268AC1D786E7400028080 /* 周杰伦 - 断了的弦.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A11D786E7400028080 /* 周杰伦 - 断了的弦.mp3 */; };
+		FE4268AD1D786E7400028080 /* 周杰伦 - 星晴.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A21D786E7400028080 /* 周杰伦 - 星晴.mp3 */; };
+		FE4268AE1D786E7400028080 /* 周杰伦 - 晴天.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A31D786E7400028080 /* 周杰伦 - 晴天.mp3 */; };
+		FE4268AF1D786E7400028080 /* 周杰伦 - 简单爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A41D786E7400028080 /* 周杰伦 - 简单爱.mp3 */; };
+		FE4268B01D786E7400028080 /* 周杰伦 - 红模仿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268A51D786E7400028080 /* 周杰伦 - 红模仿.mp3 */; };
+		FE4268C41D7874E000028080 /* 红模仿.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C31D7874E000028080 /* 红模仿.lrc */; };
+		FE4268CF1D78754F00028080 /* 235319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C51D78754F00028080 /* 235319.mp3 */; };
+		FE4268D01D78754F00028080 /* 255319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C61D78754F00028080 /* 255319.mp3 */; };
+		FE4268D11D78754F00028080 /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C71D78754F00028080 /* 309769.mp3 */; };
+		FE4268D21D78754F00028080 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C81D78754F00028080 /* 339744.mp3 */; };
+		FE4268D31D78754F00028080 /* 10405520.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268C91D78754F00028080 /* 10405520.mp3 */; };
+		FE4268D41D78754F00028080 /* 10736444.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268CA1D78754F00028080 /* 10736444.mp3 */; };
+		FE4268D51D78754F00028080 /* 12309111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268CB1D78754F00028080 /* 12309111.mp3 */; };
+		FE4268D61D78754F00028080 /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268CC1D78754F00028080 /* 14945107.mp3 */; };
+		FE4268D71D78754F00028080 /* 120125029.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268CD1D78754F00028080 /* 120125029.mp3 */; };
+		FE4268D81D78754F00028080 /* 1201111234.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE4268CE1D78754F00028080 /* 1201111234.mp3 */; };
+		FE4268DA1D78775B00028080 /* 一路向北.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE4268D91D78775B00028080 /* 一路向北.lrc */; };
+		FE4268DC1D7877AC00028080 /* 简单爱.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FE4268DB1D7877AC00028080 /* 简单爱.lrc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,17 +191,31 @@
 		FE366D7B1D744DB400D6F4D1 /* 309769.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 309769.lrc; sourceTree = "<group>"; };
 		FE366D7C1D744DB400D6F4D1 /* 339744.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 339744.lrc; sourceTree = "<group>"; };
 		FE366D7D1D744DB400D6F4D1 /* 月半小夜曲.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "月半小夜曲.lrc"; sourceTree = "<group>"; };
-		FE366D7F1D744DB400D6F4D1 /* 10405520.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10405520.mp3; sourceTree = "<group>"; };
-		FE366D801D744DB400D6F4D1 /* 10736444.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10736444.mp3; sourceTree = "<group>"; };
-		FE366D811D744DB400D6F4D1 /* 1201111234.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1201111234.mp3; sourceTree = "<group>"; };
-		FE366D821D744DB400D6F4D1 /* 120125029.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 120125029.mp3; sourceTree = "<group>"; };
-		FE366D831D744DB400D6F4D1 /* 12309111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12309111.mp3; sourceTree = "<group>"; };
-		FE366D841D744DB400D6F4D1 /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
-		FE366D851D744DB400D6F4D1 /* 235319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 235319.mp3; sourceTree = "<group>"; };
-		FE366D861D744DB400D6F4D1 /* 255319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 255319.mp3; sourceTree = "<group>"; };
-		FE366D871D744DB400D6F4D1 /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
-		FE366D881D744DB400D6F4D1 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
 		FE366D891D744DB400D6F4D1 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		FE42689B1D786E7400028080 /* 周杰伦 - 一路向北.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 一路向北.mp3"; sourceTree = "<group>"; };
+		FE42689C1D786E7400028080 /* 周杰伦 - 上海一九四三.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 上海一九四三.mp3"; sourceTree = "<group>"; };
+		FE42689D1D786E7400028080 /* 周杰伦 - 世界末日.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 世界末日.mp3"; sourceTree = "<group>"; };
+		FE42689E1D786E7400028080 /* 周杰伦 - 分裂(离开).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 分裂(离开).mp3"; sourceTree = "<group>"; };
+		FE42689F1D786E7400028080 /* 周杰伦 - 告白气球.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 告白气球.mp3"; sourceTree = "<group>"; };
+		FE4268A01D786E7400028080 /* 周杰伦 - 回到过去.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 回到过去.mp3"; sourceTree = "<group>"; };
+		FE4268A11D786E7400028080 /* 周杰伦 - 断了的弦.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 断了的弦.mp3"; sourceTree = "<group>"; };
+		FE4268A21D786E7400028080 /* 周杰伦 - 星晴.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 星晴.mp3"; sourceTree = "<group>"; };
+		FE4268A31D786E7400028080 /* 周杰伦 - 晴天.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 晴天.mp3"; sourceTree = "<group>"; };
+		FE4268A41D786E7400028080 /* 周杰伦 - 简单爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 简单爱.mp3"; sourceTree = "<group>"; };
+		FE4268A51D786E7400028080 /* 周杰伦 - 红模仿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "周杰伦 - 红模仿.mp3"; sourceTree = "<group>"; };
+		FE4268C31D7874E000028080 /* 红模仿.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "红模仿.lrc"; sourceTree = "<group>"; };
+		FE4268C51D78754F00028080 /* 235319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 235319.mp3; sourceTree = "<group>"; };
+		FE4268C61D78754F00028080 /* 255319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 255319.mp3; sourceTree = "<group>"; };
+		FE4268C71D78754F00028080 /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
+		FE4268C81D78754F00028080 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
+		FE4268C91D78754F00028080 /* 10405520.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10405520.mp3; sourceTree = "<group>"; };
+		FE4268CA1D78754F00028080 /* 10736444.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10736444.mp3; sourceTree = "<group>"; };
+		FE4268CB1D78754F00028080 /* 12309111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12309111.mp3; sourceTree = "<group>"; };
+		FE4268CC1D78754F00028080 /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
+		FE4268CD1D78754F00028080 /* 120125029.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 120125029.mp3; sourceTree = "<group>"; };
+		FE4268CE1D78754F00028080 /* 1201111234.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1201111234.mp3; sourceTree = "<group>"; };
+		FE4268D91D78775B00028080 /* 一路向北.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "一路向北.lrc"; sourceTree = "<group>"; };
+		FE4268DB1D7877AC00028080 /* 简单爱.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "简单爱.lrc"; sourceTree = "<group>"; };
 		FECAD9C11D6B3F7100FF65EB /* MJ 音乐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MJ 音乐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAD9DD1D6B3F7200FF65EB /* MJ 音乐.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MJ 音乐.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,9 +378,9 @@
 		FE366D5D1D744DB400D6F4D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FE42689A1D786E7400028080 /* MP3s */,
 				FE366D5E1D744DB400D6F4D1 /* Images */,
 				FE366D731D744DB400D6F4D1 /* Lrcs */,
-				FE366D7E1D744DB400D6F4D1 /* MP3s */,
 				FE366D891D744DB400D6F4D1 /* Musics.plist */,
 			);
 			path = Resources;
@@ -391,9 +419,12 @@
 				FE366D741D744DB400D6F4D1 /* 10405520.lrc */,
 				FE366D751D744DB400D6F4D1 /* 10736444.lrc */,
 				FE366D761D744DB400D6F4D1 /* 120125029.lrc */,
+				FE4268DB1D7877AC00028080 /* 简单爱.lrc */,
 				FE366D771D744DB400D6F4D1 /* 12309111.lrc */,
+				FE4268D91D78775B00028080 /* 一路向北.lrc */,
 				FE366D781D744DB400D6F4D1 /* 14945107.lrc */,
 				FE366D791D744DB400D6F4D1 /* 235319.lrc */,
+				FE4268C31D7874E000028080 /* 红模仿.lrc */,
 				FE366D7A1D744DB400D6F4D1 /* 255319.lrc */,
 				FE366D7B1D744DB400D6F4D1 /* 309769.lrc */,
 				FE366D7C1D744DB400D6F4D1 /* 339744.lrc */,
@@ -402,28 +433,39 @@
 			path = Lrcs;
 			sourceTree = "<group>";
 		};
-		FE366D7E1D744DB400D6F4D1 /* MP3s */ = {
-			isa = PBXGroup;
-			children = (
-				FE366D7F1D744DB400D6F4D1 /* 10405520.mp3 */,
-				FE366D801D744DB400D6F4D1 /* 10736444.mp3 */,
-				FE366D811D744DB400D6F4D1 /* 1201111234.mp3 */,
-				FE366D821D744DB400D6F4D1 /* 120125029.mp3 */,
-				FE366D831D744DB400D6F4D1 /* 12309111.mp3 */,
-				FE366D841D744DB400D6F4D1 /* 14945107.mp3 */,
-				FE366D851D744DB400D6F4D1 /* 235319.mp3 */,
-				FE366D861D744DB400D6F4D1 /* 255319.mp3 */,
-				FE366D871D744DB400D6F4D1 /* 309769.mp3 */,
-				FE366D881D744DB400D6F4D1 /* 339744.mp3 */,
-			);
-			path = MP3s;
-			sourceTree = "<group>";
-		};
 		FE366DD81D744DBD00D6F4D1 /* QQ 音乐 - 1Tests */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "QQ 音乐 - 1Tests";
+			sourceTree = "<group>";
+		};
+		FE42689A1D786E7400028080 /* MP3s */ = {
+			isa = PBXGroup;
+			children = (
+				FE42689B1D786E7400028080 /* 周杰伦 - 一路向北.mp3 */,
+				FE42689C1D786E7400028080 /* 周杰伦 - 上海一九四三.mp3 */,
+				FE42689D1D786E7400028080 /* 周杰伦 - 世界末日.mp3 */,
+				FE42689E1D786E7400028080 /* 周杰伦 - 分裂(离开).mp3 */,
+				FE42689F1D786E7400028080 /* 周杰伦 - 告白气球.mp3 */,
+				FE4268A01D786E7400028080 /* 周杰伦 - 回到过去.mp3 */,
+				FE4268A11D786E7400028080 /* 周杰伦 - 断了的弦.mp3 */,
+				FE4268A21D786E7400028080 /* 周杰伦 - 星晴.mp3 */,
+				FE4268A31D786E7400028080 /* 周杰伦 - 晴天.mp3 */,
+				FE4268A41D786E7400028080 /* 周杰伦 - 简单爱.mp3 */,
+				FE4268A51D786E7400028080 /* 周杰伦 - 红模仿.mp3 */,
+				FE4268C51D78754F00028080 /* 235319.mp3 */,
+				FE4268C61D78754F00028080 /* 255319.mp3 */,
+				FE4268C71D78754F00028080 /* 309769.mp3 */,
+				FE4268C81D78754F00028080 /* 339744.mp3 */,
+				FE4268C91D78754F00028080 /* 10405520.mp3 */,
+				FE4268CA1D78754F00028080 /* 10736444.mp3 */,
+				FE4268CB1D78754F00028080 /* 12309111.mp3 */,
+				FE4268CC1D78754F00028080 /* 14945107.mp3 */,
+				FE4268CD1D78754F00028080 /* 120125029.mp3 */,
+				FE4268CE1D78754F00028080 /* 1201111234.mp3 */,
+			);
+			path = MP3s;
 			sourceTree = "<group>";
 		};
 		FECAD9B81D6B3F7100FF65EB = {
@@ -524,51 +566,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4268AC1D786E7400028080 /* 周杰伦 - 断了的弦.mp3 in Resources */,
 				FE366DA71D744DB400D6F4D1 /* MJListViewCell.xib in Resources */,
+				FE4268D21D78754F00028080 /* 339744.mp3 in Resources */,
 				FE366DAF1D744DB400D6F4D1 /* bb@2x.jpg in Resources */,
+				FE4268A61D786E7400028080 /* 周杰伦 - 一路向北.mp3 in Resources */,
+				FE4268AB1D786E7400028080 /* 周杰伦 - 回到过去.mp3 in Resources */,
 				FE366DBC1D744DB400D6F4D1 /* lkq_icon@2x.jpg in Resources */,
+				FE4268CF1D78754F00028080 /* 235319.mp3 in Resources */,
 				FE366D8A1D744DB400D6F4D1 /* Assets.xcassets in Resources */,
 				FE366DC41D744DB400D6F4D1 /* 10736444.lrc in Resources */,
 				FE366DC71D744DB400D6F4D1 /* 14945107.lrc in Resources */,
 				FE366DB71D744DB400D6F4D1 /* jj@2x.jpg in Resources */,
+				FE4268DC1D7877AC00028080 /* 简单爱.lrc in Resources */,
 				FE366DBA1D744DB400D6F4D1 /* kzxd_icon@2x.jpg in Resources */,
 				FE366DCB1D744DB400D6F4D1 /* 339744.lrc in Resources */,
+				FE4268D71D78754F00028080 /* 120125029.mp3 in Resources */,
 				FE366DC61D744DB400D6F4D1 /* 12309111.lrc in Resources */,
-				FE366DD41D744DB400D6F4D1 /* 255319.mp3 in Resources */,
-				FE366DD31D744DB400D6F4D1 /* 235319.mp3 in Resources */,
 				FE366DC51D744DB400D6F4D1 /* 120125029.lrc in Resources */,
+				FE4268DA1D78775B00028080 /* 一路向北.lrc in Resources */,
 				FE366DB91D744DB400D6F4D1 /* kzxd@2x.jpg in Resources */,
 				FE366D8B1D744DB400D6F4D1 /* Main.storyboard in Resources */,
-				FE366DCD1D744DB400D6F4D1 /* 10405520.mp3 in Resources */,
 				FE366DBD1D744DB400D6F4D1 /* nanquan@2x.jpg in Resources */,
+				FE4268AF1D786E7400028080 /* 周杰伦 - 简单爱.mp3 in Resources */,
 				FE366DC11D744DB400D6F4D1 /* zxy@2x.jpg in Resources */,
 				FE366DB41D744DB400D6F4D1 /* eason_icon@2x.jpg in Resources */,
+				FE4268D01D78754F00028080 /* 255319.mp3 in Resources */,
 				FE366DB81D744DB400D6F4D1 /* jj_icon@2x.png in Resources */,
-				FE366DCF1D744DB400D6F4D1 /* 1201111234.mp3 in Resources */,
-				FE366DD21D744DB400D6F4D1 /* 14945107.mp3 in Resources */,
-				FE366DD11D744DB400D6F4D1 /* 12309111.mp3 in Resources */,
 				FE366DB11D744DB400D6F4D1 /* dzq@2x.jpg in Resources */,
+				FE4268A81D786E7400028080 /* 周杰伦 - 世界末日.mp3 in Resources */,
+				FE4268AE1D786E7400028080 /* 周杰伦 - 晴天.mp3 in Resources */,
 				FE366DCA1D744DB400D6F4D1 /* 309769.lrc in Resources */,
-				FE366DD61D744DB400D6F4D1 /* 339744.mp3 in Resources */,
-				FE366DCE1D744DB400D6F4D1 /* 10736444.mp3 in Resources */,
 				FE366DBB1D744DB400D6F4D1 /* lkq@2x.jpg in Resources */,
 				FE366DB31D744DB400D6F4D1 /* eason@2x.jpg in Resources */,
 				FE366DCC1D744DB400D6F4D1 /* 月半小夜曲.lrc in Resources */,
-				FE366DD01D744DB400D6F4D1 /* 120125029.mp3 in Resources */,
 				FE366DB01D744DB400D6F4D1 /* bb_icon@2x.jpg in Resources */,
+				FE4268C41D7874E000028080 /* 红模仿.lrc in Resources */,
 				FE366DC01D744DB400D6F4D1 /* wf_icon@2x.jpg in Resources */,
+				FE4268A91D786E7400028080 /* 周杰伦 - 分裂(离开).mp3 in Resources */,
 				FE366DC21D744DB400D6F4D1 /* zxy_icon@2x.jpg in Resources */,
 				FE366DD71D744DB400D6F4D1 /* Musics.plist in Resources */,
+				FE4268D51D78754F00028080 /* 12309111.mp3 in Resources */,
+				FE4268D61D78754F00028080 /* 14945107.mp3 in Resources */,
+				FE4268AA1D786E7400028080 /* 周杰伦 - 告白气球.mp3 in Resources */,
+				FE4268D11D78754F00028080 /* 309769.mp3 in Resources */,
 				FE366DBF1D744DB400D6F4D1 /* wf@2x.jpg in Resources */,
 				FE366DAC1D744DB400D6F4D1 /* Info.plist in Resources */,
 				FE366DC31D744DB400D6F4D1 /* 10405520.lrc in Resources */,
-				FE366DD51D744DB400D6F4D1 /* 309769.mp3 in Resources */,
+				FE4268D31D78754F00028080 /* 10405520.mp3 in Resources */,
+				FE4268D41D78754F00028080 /* 10736444.mp3 in Resources */,
+				FE4268A71D786E7400028080 /* 周杰伦 - 上海一九四三.mp3 in Resources */,
 				FE366DC81D744DB400D6F4D1 /* 235319.lrc in Resources */,
 				FE366DB61D744DB400D6F4D1 /* jay_icon@2x.png in Resources */,
 				FE366DC91D744DB400D6F4D1 /* 255319.lrc in Resources */,
+				FE4268D81D78754F00028080 /* 1201111234.mp3 in Resources */,
 				FE366DB21D744DB400D6F4D1 /* dzq_icon@2x.jpg in Resources */,
 				FE366DBE1D744DB400D6F4D1 /* nanquan_icon@2x.jpg in Resources */,
 				FE366DB51D744DB400D6F4D1 /* jay@2x.jpg in Resources */,
+				FE4268B01D786E7400028080 /* 周杰伦 - 红模仿.mp3 in Resources */,
+				FE4268AD1D786E7400028080 /* 周杰伦 - 星晴.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

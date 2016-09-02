@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7D84711A321BF35487C0C4F29CD1244D5824F43C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7D84711A321BF35487C0C4F29CD1244D5824F43C" : 0,
+    "FFC294BBF48DD8586DB45F8235A5FFABE0341647" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1720CA46-C787-4F07-A748-707F76C750DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7D84711A321BF35487C0C4F29CD1244D5824F43C" : "MJMusic\/",
+    "FFC294BBF48DD8586DB45F8235A5FFABE0341647" : "QQ%20%E9%9F%B3%E4%B9%90%20-%201\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MJ 音乐",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MJ 音乐.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sunmengxiang\/MJMusic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D84711A321BF35487C0C4F29CD1244D5824F43C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sunmengxiang\/MJ-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FFC294BBF48DD8586DB45F8235A5FFABE0341647"
+    }
+  ]
+}

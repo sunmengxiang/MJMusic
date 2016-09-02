@@ -31,5 +31,9 @@ static NSString *listCelID = @"listCell";
     
     return cell;
 }
-
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    self.playingButton.hidden = YES;
+}
 @end

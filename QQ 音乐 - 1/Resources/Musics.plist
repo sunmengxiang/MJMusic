@@ -4,6 +4,160 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>一路向北</string>
+		<key>filename</key>
+		<string>周杰伦 - 一路向北.mp3</string>
+		<key>lrcname</key>
+		<string>一路向北.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>上海一九四三</string>
+		<key>filename</key>
+		<string>周杰伦 - 上海一九四三.mp3</string>
+		<key>lrcname</key>
+		<string>上海一九四三.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>世界末日</string>
+		<key>filename</key>
+		<string>周杰伦 - 世界末日.mp3</string>
+		<key>lrcname</key>
+		<string>世界末日.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>分裂</string>
+		<key>filename</key>
+		<string>周杰伦 - 分裂(离开).mp3</string>
+		<key>lrcname</key>
+		<string>分裂(内地版：离开).lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>告白气球</string>
+		<key>filename</key>
+		<string>周杰伦 - 告白气球.mp3</string>
+		<key>lrcname</key>
+		<string>告白气球.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>回到过去</string>
+		<key>filename</key>
+		<string>周杰伦 - 回到过去.mp3</string>
+		<key>lrcname</key>
+		<string>回到过去.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.png</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>断了的弦</string>
+		<key>filename</key>
+		<string>周杰伦 - 断了的弦.mp3</string>
+		<key>lrcname</key>
+		<string>断了的弦.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.jpg</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>星晴</string>
+		<key>filename</key>
+		<string>周杰伦 - 星晴.mp3</string>
+		<key>lrcname</key>
+		<string>星晴.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.jpg</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>简单爱</string>
+		<key>filename</key>
+		<string>周杰伦 - 简单爱.mp3</string>
+		<key>lrcname</key>
+		<string>简单爱.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.jpg</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>红模仿</string>
+		<key>filename</key>
+		<string>周杰伦 - 红模仿.mp3</string>
+		<key>lrcname</key>
+		<string>红模仿.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.jpg</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>断了的弦</string>
+		<key>filename</key>
+		<string>周杰伦 - 断了的弦.mp3</string>
+		<key>lrcname</key>
+		<string>断了的弦.lrc</string>
+		<key>singer</key>
+		<string>周杰伦</string>
+		<key>singerIcon</key>
+		<string>jay_icon.jpg</string>
+		<key>icon</key>
+		<string>jay.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>月半小夜曲</string>
 		<key>filename</key>
 		<string>1201111234.mp3</string>

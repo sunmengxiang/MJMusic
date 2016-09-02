@@ -100,6 +100,7 @@ static NSString * MJNotificationListCellSelected = @"MJNotificationListCellSelec
     MJMusics * musics = self.musicsArray[indexPath.row];
     cell.songLabel.text = musics.name;
     cell.singerLabel.text = musics.singer;
+
     if (indexPath.row == self.currentIndex)
     {
         cell.playingButton.hidden = NO;
@@ -113,8 +114,9 @@ static NSString * MJNotificationListCellSelected = @"MJNotificationListCellSelec
     lastCell.playingButton.hidden = YES;
     MJListViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.playingButton.hidden = NO;
-    [[NSNotificationCenter defaultCenter]postNotificationName:MJNotificationListCellSelected object:indexPath];
+    [[NSNotificationCenter defaultCenter] postNotificationName:MJNotificationListCellSelected object:indexPath];
     self.lastIndexPath = indexPath;
+    self.currentIndex = self.lastIndexPath.row;
 }
 
 - (void)layoutSubviews

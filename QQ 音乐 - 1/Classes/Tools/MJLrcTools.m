@@ -24,6 +24,9 @@
 
 + (NSArray *)lrcWithMusic:(MJMusics *)musics
 {
+    
+    if (musics.lrcname == nil) return nil;
+    
     NSString * lrcPath = [[NSBundle mainBundle]pathForResource:musics.lrcname ofType:nil];
     
     NSString * string = [NSString stringWithContentsOfFile:lrcPath encoding:NSUTF8StringEncoding error:nil];

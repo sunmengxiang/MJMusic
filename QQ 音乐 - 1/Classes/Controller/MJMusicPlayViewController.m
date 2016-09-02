@@ -182,7 +182,10 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
 //     设置 play 按钮的mode
     self.playOrPauseButton.selected = self.currentPlayer.isPlaying;
 //    添加歌词
-    self.lrcView.lrcArray = [MJLrcTools lrcWithMusic:musics];
+    NSArray * array = [MJLrcTools lrcWithMusic:musics];
+    if (array == nil) self.lrcView.lrcArray = [NSArray array];
+    else self.lrcView.lrcArray = array;
+    
     self.lrcView.currentTime = currentTime;
     self.lrcView.lrcLabel = self.lrcLineLabel;
     self.lrcView.delegate = self;
@@ -254,9 +257,7 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     [self.iconImageView.layer removeAllAnimations];
     
     [self startPlayMusic];
-    
-    
-    
+   
 }
 
 - (IBAction)playOrPauseClick:(UIButton *)sender
@@ -290,32 +291,24 @@ typedef NS_ENUM(NSUInteger,MJSongPlaySequence)
     
     MJMusics * nextMusic = nil;
     if (self.sequenceIndex == MJSongPlaySequenceList )
-    {
         //    拿到下一首歌曲的数据模型
         nextMusic = [MJMusicTools nextMusic];
-    }
      else if (self.sequenceIndex == MJSongPlaySequenceOnly)
     {
 //        自动播完音乐才执行单曲循环
         if (sender == nil)
-        {
             nextMusic = [MJMusicTools playingMusics];
-        }
         else
-        {
 //        点击下一首，效果跟列表循环一样
         nextMusic = [MJMusicTools nextMusic];
-        }
     }
     else if (self.sequenceIndex == MJSongPlaySequenceRandom)
-    {
         nextMusic = [MJMusicTools randomMusic];
-    }
+
 //     播放下一首歌曲，并在这个方法里将上一首歌曲暂停
     [self playingMusic:nextMusic];
 //     记录当前正在播放的音乐
     [MJMusicTools setPlayingMusics:nextMusic];
-    [self.iconImageView.layer removeAllAnimations];
 //    开始布局当前播放的音乐图片等内容
     [self startPlayMusic];
 }

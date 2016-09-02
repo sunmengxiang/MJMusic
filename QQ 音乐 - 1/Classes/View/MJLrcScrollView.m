@@ -15,8 +15,12 @@
 /** tableView */
 @property (weak ,nonatomic) UITableView * tableView;
 
+/** showNoLrcNoticeLabel */
+@property (weak ,nonatomic) UILabel * noticeLabel;
+
 @property(nonatomic,assign) NSInteger currentIndex;
 @end
+
 @implementation MJLrcScrollView
 
 - (void)setCurrentTime:(NSTimeInterval)currentTime
@@ -27,8 +31,8 @@
     {
         //    启动之后，第一句歌词就居中显示
         NSIndexPath * topIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        if (self.lrcArray.count != 0)
         [self.tableView scrollToRowAtIndexPath:topIndexPath atScrollPosition:UITableViewScrollPositionTop animated:NO];
-        
     }
     
     NSInteger count = self.lrcArray.count;
@@ -46,7 +50,7 @@
             
         }
         //        当前时间 currentTime与歌词的时间比较，找出正在播放的歌词
-        if (lrcLine.time < currentTime && nextLine.time > currentTime && self.currentIndex != i)
+        if (lrcLine.time < _currentTime && nextLine.time > _currentTime && self.currentIndex != i)
         {
             NSIndexPath * indexPath = [NSIndexPath indexPathForRow:i inSection:0];
             NSIndexPath * previousPath = [NSIndexPath indexPathForRow:self.currentIndex inSection:0];
@@ -65,7 +69,7 @@
         {
             //            刷新 label
             NSIndexPath * currentIndexPath = [NSIndexPath indexPathForRow:i inSection:0];
-            CGFloat progress =  (currentTime - lrcLine.time)/(nextLine.time - lrcLine.time);
+            CGFloat progress =  (_currentTime - lrcLine.time)/(nextLine.time - lrcLine.time);
             MJLrcCell * cell = [self.tableView cellForRowAtIndexPath:currentIndexPath];
             cell.label.progress = progress;
             self.lrcLabel.progress = progress;
@@ -75,9 +79,11 @@
 
 - (void)setLrcArray:(NSArray *)lrcArray
 {
-    self.currentIndex = 0;
-    
     _lrcArray = lrcArray;
+    
+    [self checkLrcArray];
+    
+    self.currentIndex = 0;
     
     [self.tableView reloadData];
 }
@@ -86,6 +92,9 @@
     if (self = [super initWithCoder:aDecoder])
     {
         [self setUpTableView];
+        
+        [self checkLrcArray];
+        
     }
     return self;
 }
@@ -94,10 +103,29 @@
     if (self = [super initWithFrame:frame])
     {
         [self setUpTableView];
+        
+        [self checkLrcArray];
+        
     }
     return self;
 }
-
+- (void)checkLrcArray
+{
+    if (self.lrcArray.count == 0 )
+    {
+        if(self.noticeLabel != nil) self.noticeLabel.hidden = NO;
+        else {
+        UILabel * showNoLrcNoticeLabel = [[UILabel alloc]init];
+        showNoLrcNoticeLabel.text = @"当前歌曲未找到歌词,抱歉";
+        [showNoLrcNoticeLabel setFont:[UIFont systemFontOfSize:14]];
+        showNoLrcNoticeLabel.textColor = [UIColor darkGrayColor];
+        [showNoLrcNoticeLabel setTextAlignment:NSTextAlignmentCenter];
+        self.noticeLabel = showNoLrcNoticeLabel;
+        [self addSubview:showNoLrcNoticeLabel];
+        }
+    }
+    else self.noticeLabel.hidden = YES;
+}
 - (void)setUpTableView
 {
     UITableView * tableView = [[UITableView alloc]init];
@@ -108,8 +136,9 @@
     tableView.contentInset = UIEdgeInsetsMake(self.frame.size.height * 0.5, 0, self.frame.size.height * 0.5, 0);
     [self addSubview:tableView];
     self.tableView = tableView;
-
+    
 }
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -124,6 +153,14 @@
         make.width.equalTo(self.mas_width);
     }];
     
+    [self.noticeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.tableView.mas_centerX);
+        make.centerY.equalTo(self.mas_centerY);
+    }];
+    
+    [self.noticeLabel sizeToFit];
+
+    
 }
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -137,6 +174,7 @@ static NSString * cellID = @"cell";
     MJLrcCell* cell = [MJLrcCell lrcCellWithTableView:tableView];
     
 #warning 模拟器 bug,真机调试无异常，上线时改为 clearColor
+//    cell.backgroundColor = [UIColor clearColor];
     cell.backgroundColor = [UIColor redColor];
     
     MJLrcList * lrcLine = self.lrcArray[indexPath.row];
